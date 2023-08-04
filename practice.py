@@ -103,3 +103,11 @@ for itervar in [3, 41, 12, 9, 74, 15]:
         break
     print("Loop:", itervar, smallest)
 print("Smallest:", smallest)
+#####################################################
+#Summing in a loop
+zork = 0
+print('Before ', zork)
+for things in [2,34,67,24,23,99]:
+    zork = zork + 1
+    print(zork, things)
+print('After, zork')
