@@ -59,7 +59,7 @@ def addtwo(a, b):
     added = a + b
     return added
 
-x = addtwo(3, 9)  # Call addtwo() function with arguments 3 and 9 and assign the return value to x
+x = addtwo(3, 9)  # Call addtwo() function with arguments 3 and 9 and assign the return 
 print(x)  # Print the value of x, which is 12
 
 #####################################################################
@@ -111,3 +111,66 @@ for things in [2,34,67,24,23,99]:
     zork = zork + 1
     print(zork, things)
 print('After, zork')
+####################################################
+#Summary in a loop
+zork = 0
+print('Before', zork)
+for i in [33,44,5,12,746]:
+    zork = zork + i
+    print(zork)
+print('After', zork)
+######################################################
+#Finding the average in a loop
+count = 0
+sum = 0
+print('Before', count, sum)
+for i in [34, 57, 92, 2, 7, 283]:
+    count = count + 1
+    sum = sum + i
+    print(count, sum, i)
+print('after', count, sum, sum/count)
+################################################
+# Filtering in a loop
+print('Before')
+for value in [23, 53, 66, 348, 34802, 234]:
+    if value > 30:
+        print('Large Number', value)
+print('After')
+#################################################
+#Search using a Boolean Variable
+found = False
+print('Before', found)
+for value in [54,7, 6, 79, 3, 100]:
+    if value == 3:
+        found = True
+    print(found, value)
+print('After', found)
+##################################################
+#Find the smallest value
+smallest = None
+print('Before', smallest)
+for value in [34, 5, 1, 7, 18, 53]:
+    if smallest is None:
+        smallest = value
+    elif value < smallest:
+        smallest = value
+    print(smallest, value)
+print('after', smallest) 
+
+##################################################
+#Looping Through Strings
+fruit = 'mango'
+index = 0
+while index < len(fruit):
+    letter = fruit[index]
+    print(index, letter)
+    index = index + 1
+##################################################
+print('This is a new loop')
+#Loopiong and Counting
+word = 'mangooo'
+counts = 0
+for i in word:
+    if i == 'o':
+        counts = count + 1
+print('The number of "o" is ', counts)
