@@ -11,5 +11,8 @@ print(dir(stuff))
 ###################################################
 line= 'Can you please call me at 2 pm'
 print(line.startswith('Can'))
-     
+###################################################
+testnewline =  'B\nY'
+print(testnewline)   
+print('\n\n\n')
       
