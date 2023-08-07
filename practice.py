@@ -77,32 +77,7 @@ for the_num in [3,6,91,36,78,99]:
         largest_so_far = the_num
     print(largest_so_far, the_num)
 print('After', largest_so_far)
-    
-# Initialize a variable to keep track of the largest number found so far.
-largest_so_far = -1
-print('Before:', largest_so_far)
-# Iterate through each number in the list [3, 6, 91, 36, 78, 99].
-for the_num in [3, 6, 91, 36, 78, 99]:
-    # Check if the current number is greater than the largest number found so far.
-    if the_num > largest_so_far:
-        # If the current number is greater, update the largest_so_far to the current num
-        largest_so_far = the_num
-    
-    # Print the current largest number and the current number being compared.
-    print(largest_so_far, the_num)
 
-# After the loop, print the final largest number found.
-print('After:', largest_so_far)
-
-
-smallest = None
-print("Before:", smallest)
-for itervar in [3, 41, 12, 9, 74, 15]:
-    if smallest is None or itervar < smallest:
-        smallest = itervar
-        break
-    print("Loop:", itervar, smallest)
-print("Smallest:", smallest)
 #####################################################
 #Summing in a loop
 zork = 0
@@ -111,14 +86,16 @@ for things in [2,34,67,24,23,99]:
     zork = zork + 1
     print(zork, things)
 print('After, zork')
+
 ####################################################
 #Summary in a loop
 zork = 0
 print('Before', zork)
-for i in [33,44,5,12,746]:
+for i in [34, 57, 92, 2, 7, 283]:
     zork = zork + i
     print(zork)
 print('After', zork)
+
 ######################################################
 #Finding the average in a loop
 count = 0
@@ -129,6 +106,7 @@ for i in [34, 57, 92, 2, 7, 283]:
     sum = sum + i
     print(count, sum, i)
 print('after', count, sum, sum/count)
+
 ################################################
 # Filtering in a loop
 print('Before')
@@ -136,6 +114,7 @@ for value in [23, 53, 66, 348, 34802, 234]:
     if value > 30:
         print('Large Number', value)
 print('After')
+
 #################################################
 #Search using a Boolean Variable
 found = False
@@ -145,6 +124,7 @@ for value in [54,7, 6, 79, 3, 100]:
         found = True
     print(found, value)
 print('After', found)
+
 ##################################################
 #Find the smallest value
 smallest = None
@@ -165,6 +145,7 @@ while index < len(fruit):
     letter = fruit[index]
     print(index, letter)
     index = index + 1
+print(index)
 ##################################################
 print('This is a new loop')
 #Loopiong and Counting
@@ -174,3 +155,4 @@ for i in word:
     if i == 'o':
         counts = count + 1
 print('The number of "o" is ', counts)
+################################################################
